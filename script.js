@@ -1,4 +1,4 @@
-// Funkcja pobierająca kursy walut z API NBP
+
 function getExchangeRates(currency, amount) {
   const url = `https://api.nbp.pl/api/exchangerates/rates/A/${currency}/?format=json`;
 
@@ -19,17 +19,13 @@ function getExchangeRates(currency, amount) {
   }
 }
 
-// Funkcja przeliczająca kwotę na podaną walutę
 function convertCurrency(rate, currency, amount) {
-
-
 
   const result = amount * rate;
   const resultContainerElement = document.querySelector('#resultContainer');
   resultContainerElement.innerHTML = `${amount} ${currency} = ${result.toFixed(2)} PLN`;
 }
 
-// Obsługa przycisku "Przelicz"
 const convertButton = document.getElementById('convert');
 convertButton.addEventListener('click', () => {
   const amount = document.getElementById('amount').value;
