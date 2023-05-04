@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="PL">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Kalkulator Waluty</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <img src="logo.jpg" alt="Logo" class="calculator-app-logo" />
+
+  <h1 class="calculator-title">Kalkulator walut</h1>
+  <form id="convert-currency-form" class="calculator-form">
+    <label class="calculator-form-label" for="currency">Wybierz walutę:</label>
+    <select class="calculator-form-select" id="currency">
+      <option value="EUR">Euro</option>
+      <option value="USD">Dolar amerykański</option>
+      <option value="CHF">Frank szwajcarski</option>
+    </select>
+    <label class="calculator-form-label" for="amount">Podaj kwotę:</label>
+    <input class="calculator-form-input" type="number" id="amount" />
+    <button class="calculator-form-btn" type="submit">Przelicz</button>
+  </form>
+  <div id="resultContainer" class="calculator-result"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
