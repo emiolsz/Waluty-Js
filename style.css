@@ -4,29 +4,29 @@ body {
   padding: 0;
 }
 
-h1 {
+.calculator-title {
   text-align: center;
 }
 
-.form {
+.calculator-form {
   margin: 20px auto;
   text-align: center;
 }
 
-label,
-select,
-input {
+.calculator-form-label,
+.calculator-form-select,
+.calculator-form-input {
   margin: 5px;
 }
 
-select,
-input {
+.calculator-form-select,
+.calculator-form-input {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-button {
+.calculator-form-btn {
   padding: 5px;
   border-radius: 5px;
   border: none;
@@ -35,17 +35,17 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.calculator-form-btn:hover {
   background-color: #3e8e41;
 }
 
-.result {
+.calculator-result {
   text-align: center;
   font-size: 24px;
   margin: 20px auto;
 }
 
-.my-image {
+.calculator-app-logo {
   width: 250px;
   height: 250px;
   position: absolute;
